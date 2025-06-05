@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page Avatar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('BG1.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+
+    .login-box {
+      width: 350px;
+      padding: 60px 40px 40px;
+      background: rgba(74, 67, 90, 0.2);
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align:left;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .login-box h2 {
+      margin: 20px 0 30px;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      color: white;
+      padding: 10px;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    .login-box input:focus {
+      outline: none;
+      border-bottom: 2px solid #00e676;
+    }
+
+    .login-box label {
+      font-size: 14px;
+    }
+
+    .login-box input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .login-box a {
+      color: #eee;    
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 2px;
+      border-width: 3px;
+      border-bottom-style: solid;
+      border-right-style: solid;
+      border-bottom-color:rgb(102, 121, 121);border-right-color:rgb(102, 121, 121);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="GA1.png" alt="Avatar" class="avatar">
+    <h2>LOGIN WINDOW</h2>
+    <input type="text" placeholder="Your Email Address">
+    <input type="password" placeholder="Your Password">
+    <label>
+      <input type="checkbox"> Agree With <a href="#">Terms & Condition</a>
+    </label>
+    <button>Login</button>
+  </div>
+
+</body>
+</html>
